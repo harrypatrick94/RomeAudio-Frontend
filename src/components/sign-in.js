@@ -1,23 +1,19 @@
 import React, {useState} from "react";
 import ajax from '../lib/ajax'
 import axios from 'axios';
-import {
-Route,
-Link,
-HashRouter as Router, Redirect,
-} from 'react-router-dom';
+
 // let AUTH_TOKEN
 const SignIn = (props) => {
 
-  const [email, setEmail] = useState("Joely@gmail.com")
-  const [password, setPassword] = useState("abc123")
+  const [email, setEmail] = useState("benson@gamil.com")
+  const [password, setPassword] = useState("chicken")
 
   const signIn = (e) => {
     e.preventDefault()
     ajax.signIn(email, password)
       .then(res => {
-        console.log("successfull sign in: ", res)
-        console.log("token: ", res.data.token);
+        // console.log("successfull sign in: ", res)
+        console.log("token created: ", res.data.token);
         window.localStorage.setItem("token", res.data.token)
         window.localStorage.setItem("userId", res.data.user.id)
         axios.defaults.headers.common['Authorization'] = res.data.token;
@@ -47,10 +43,10 @@ const SignIn = (props) => {
     <div className="signInForm">
       <form onSubmit={signIn}>
         <label>Email:</label>
-        <input type="text" onChange={handleEmail} value="harry@gamil.com"/>
+        <input type="text" onChange={handleEmail} value="benson@gamil.com"/>
         <label>password:</label>
 
-        <input type="text" onChange={handlePassword} value="abc123"/>
+        <input type="text" onChange={handlePassword} value="chicken"/>
           <input type="submit"/>
       </form>
     </div>

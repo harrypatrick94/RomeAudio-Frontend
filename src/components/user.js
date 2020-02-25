@@ -1,11 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {
-Route,
-Link,
-HashRouter as Router, Redirect,
-} from 'react-router-dom';
 import Sequencer from "./sequencer";
-import SaveButton from "./save-button"
+// import SaveButton from "./save-button"
 import SignOut from "./sign-out"
 import UserSongs from "./user-songs"
 import ajax from '../lib/ajax'
@@ -19,20 +14,24 @@ const User = (props) => {
   // console.log('header in user', axios.defaults.headers.common['Authorization']);
 
   useEffect(() => {
+
+    if (window.localStorage.getItem("token")) {
+      const token = window.localStorage.getItem("token")
+      axios.defaults.headers.common['Authorization'] = token;
+    } else {
+      console.log('token not here');
+
+      // props.history.push("/user");
+    }
+    console.log("hook runnning");
     ajax.getUser()
       .then(user => {
         setUser(user.data)
         console.log(user.data);
-
       })
       .catch(err => console.warn(err))
   }, [])
 
-  // const updateSequence = (seq) => {
-  //   console.log('updating');
-  //   setSequence(seq)
-  //   console.log("sequence in user", sequence);
-  // }
 
   return(
 

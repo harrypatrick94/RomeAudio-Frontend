@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Tone from "tone";
 // use hooks to use state without writing a class
-import PlayerProvider from "./player-provider";
+// import PlayerProvider from "./player-provider";
 import DrumMachine from "./drum-machine"
 import PlayButton from "./play-button"
 import SaveButton from "./save-button"
 import Range from "./range"
 
 import "../styles.css";
-let _ = require('lodash');
+// let _ = require('lodash');
 const steps = 16
 
 // firstly initialise state of false (do nothing)
@@ -121,12 +121,14 @@ const Sequencer = (props) => {
         setPlayer(player);
       }
     ).toMaster();
+    setSequence(initialState)
   }, []);
   // step up stepper
   useEffect(() => {
-    if (!(_.isEmpty(props.currentSong))) {
-      setSequence(props.currentSong)
-    }
+
+    // if (!(_.isEmpty(props.currentSong))) {
+    //   setSequence(props.currentSong)
+    // }
     // start drum machine
     const timer = setTimeout(() => {
       if (playing) {
