@@ -1,0 +1,36 @@
+import axios from 'axios';
+
+// Define the API domain and paths we need for our requests
+// The paths depend on what is defined in the Rails routes.rb file
+const BASE_URL = 'http://localhost:1337';
+export default {
+  saveSong(song, authorName, trackName){
+    const url = `${BASE_URL}/drum-machine`;
+    return axios.post(url, {
+      song, authorName, trackName
+    });
+  },
+  registerUser(userName, email, password){
+    const url = `${BASE_URL}/register`
+    return axios.post(url, {
+      userName, email, password
+    })
+  },
+  signIn(email, password){
+    const url = `${BASE_URL}/signin`
+    return axios.post(url, {
+      email, password
+    })
+  },
+  // need to give token here
+  getUser(auth){
+    const url = `${BASE_URL}/user`
+    return axios.get(url, auth)
+  },
+  findSongs(){
+    return axios.get(`${BASE_URL}/songs`)
+  },
+  findSong(track){
+    return axios.get(`${BASE_URL}/drum-machine/${track}`)
+  }
+} // export

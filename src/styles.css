@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.drumMachingBoard {
+  border: 2px solid black;
+  display: inline-block;
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.playButton {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.gearBox {
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.rangeInput {
+  vertical-align: middle;
+  padding-left: 10px;
+  transform: scaleX(-1);
+}
+
+.signOut {
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: top;
+  margin-top: 5px;
+}

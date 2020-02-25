@@ -1,0 +1,27 @@
+.step {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clicked {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 5px;
+  vertical-align: middle;
+  background-color: red;
+}
+
+.play {
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 5px;
+  vertical-align: middle;
+  background-color: yellow;
+}
+
+.soundsLine {
+    display: inline-block;
+}
