@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/harrypatrick94/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css",
-    "main.js": "/harrypatrick94/RomeAudio-Frontend/static/js/main.36274408.chunk.js",
-    "main.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/main.36274408.chunk.js.map",
+    "main.js": "/harrypatrick94/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js",
+    "main.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js.map",
     "runtime-main.js": "/harrypatrick94/RomeAudio-Frontend/static/js/runtime-main.3830e23f.js",
     "runtime-main.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/runtime-main.3830e23f.js.map",
-    "static/js/2.77513292.chunk.js": "/harrypatrick94/RomeAudio-Frontend/static/js/2.77513292.chunk.js",
-    "static/js/2.77513292.chunk.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/2.77513292.chunk.js.map",
+    "static/js/2.01bf27fc.chunk.js": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js",
+    "static/js/2.01bf27fc.chunk.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js.map",
     "index.html": "/harrypatrick94/RomeAudio-Frontend/index.html",
-    "precache-manifest.d42cb899f9a93efebf68a324bd5b39cb.js": "/harrypatrick94/RomeAudio-Frontend/precache-manifest.d42cb899f9a93efebf68a324bd5b39cb.js",
+    "precache-manifest.52bf0febcee7e84beb435f2c04cd8efc.js": "/harrypatrick94/RomeAudio-Frontend/precache-manifest.52bf0febcee7e84beb435f2c04cd8efc.js",
     "service-worker.js": "/harrypatrick94/RomeAudio-Frontend/service-worker.js",
     "static/css/main.ec338a6c.chunk.css.map": "/harrypatrick94/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css.map",
-    "static/js/2.77513292.chunk.js.LICENSE.txt": "/harrypatrick94/RomeAudio-Frontend/static/js/2.77513292.chunk.js.LICENSE.txt"
+    "static/js/2.01bf27fc.chunk.js.LICENSE.txt": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3830e23f.js",
-    "static/js/2.77513292.chunk.js",
+    "static/js/2.01bf27fc.chunk.js",
     "static/css/main.ec338a6c.chunk.css",
-    "static/js/main.36274408.chunk.js"
+    "static/js/main.6d1d80c1.chunk.js"
   ]
 }
