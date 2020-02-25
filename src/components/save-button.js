@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ajax from '../lib/ajax'
 import '../styles.css'
 const SaveButton = ({sequence}) => {
-  
+  // console.log("user id: ", window.localStorage.getItem("userId"));
   const [trackName, setTrackName] = useState("Sik Trak");
   const [authorName, setAuthorName] = useState("Haz")
   const saveTrack = (e) => {
@@ -10,11 +10,12 @@ const SaveButton = ({sequence}) => {
     console.log("Da Beat: ", sequence);
     console.log("Killa name: ", trackName);
     console.log("Author: ", authorName);
-    ajax.saveSong( sequence, authorName, trackName)
+
+    ajax.saveSong( sequence, authorName, trackName, window.localStorage.getItem("userId"))
     .then(res => {
       console.log("ajax post successfulw: ", res);
 
-      this.$emit(res.data)
+      // this.$emit(res.data)
     })
     .catch(
       err => {

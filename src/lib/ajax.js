@@ -4,10 +4,11 @@ import axios from 'axios';
 // The paths depend on what is defined in the Rails routes.rb file
 const BASE_URL = 'http://localhost:1337';
 export default {
-  saveSong(song, authorName, trackName){
-    const url = `${BASE_URL}/drum-machine`;
+  saveSong(song, authorName, trackName, userId){
+    const url = `${BASE_URL}/user`;
+    console.log("Savinggggg");
     return axios.post(url, {
-      song, authorName, trackName
+      song, authorName, trackName, userId
     });
   },
   registerUser(userName, email, password){

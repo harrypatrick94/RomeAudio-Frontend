@@ -9,8 +9,8 @@ HashRouter as Router, Redirect,
 // let AUTH_TOKEN
 const SignIn = (props) => {
 
-  const [email, setEmail] = useState("harry@gmail.com")
-  const [password, setPassword] = useState("123456")
+  const [email, setEmail] = useState("Joely@gmail.com")
+  const [password, setPassword] = useState("abc123")
 
   const signIn = (e) => {
     e.preventDefault()
@@ -19,6 +19,7 @@ const SignIn = (props) => {
         console.log("successfull sign in: ", res)
         console.log("token: ", res.data.token);
         window.localStorage.setItem("token", res.data.token)
+        window.localStorage.setItem("userId", res.data.user.id)
         axios.defaults.headers.common['Authorization'] = res.data.token;
         console.log('header in signin', axios.defaults.headers.common['Authorization']);
         props.history.push('/user');
@@ -49,7 +50,7 @@ const SignIn = (props) => {
         <input type="text" onChange={handleEmail} value="harry@gamil.com"/>
         <label>password:</label>
 
-        <input type="text" onChange={handlePassword}/>
+        <input type="text" onChange={handlePassword} value="abc123"/>
           <input type="submit"/>
       </form>
     </div>
