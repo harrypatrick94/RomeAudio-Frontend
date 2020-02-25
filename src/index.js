@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom";
 import {
 Route,
-Link,
 HashRouter as Router, Redirect
 } from 'react-router-dom';
-import PlayerProvider from "./components/player-provider";
+// import PlayerProvider from "./components/player-provider";
 import DisplaySongs from "./components/display-songs";
 import SavedTrack from "./components/saved-track";
 import Sequencer from "./components/sequencer";
@@ -19,8 +18,8 @@ function App(props) {
   useEffect(() => {
     // let history = useHistory()
     if (window.localStorage.getItem("token")) {
-      console.log("token here");
-      
+      console.log("token: ", window.localStorage.getItem("token"))
+
     } else {
       console.log('token not here');
       // props.history.push("/user");

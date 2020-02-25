@@ -9,7 +9,7 @@ const DisplaySongs = () => {
 
   const [allSongs, setAllSongs] = useState([])
   const getSongs = () => {
-    ajax.findSongs()
+    ajax.findSongs(window.localStorage.getItem("userId"))
     .then( res => {
       console.log("data returned: ", res.data);
       setAllSongs(res.data)

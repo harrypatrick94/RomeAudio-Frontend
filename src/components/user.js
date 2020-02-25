@@ -7,6 +7,7 @@ HashRouter as Router, Redirect,
 import Sequencer from "./sequencer";
 import SaveButton from "./save-button"
 import SignOut from "./sign-out"
+import UserSongs from "./user-songs"
 import ajax from '../lib/ajax'
 import axios from 'axios';
 
@@ -47,6 +48,9 @@ const User = (props) => {
               <Sequencer />
             </div>
 
+          </div>
+          <div className="userSongs">
+            <UserSongs songs={user.beatz} />
           </div>
         </div>
         :

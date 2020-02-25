@@ -24,12 +24,12 @@ export default {
     })
   },
   // need to give token here
-  getUser(auth){
+  getUser(){
     const url = `${BASE_URL}/user`
-    return axios.get(url, auth)
+    return axios.get(url)
   },
-  findSongs(){
-    return axios.get(`${BASE_URL}/songs`)
+  findSongs(userId){
+    return axios.get(`${BASE_URL}/songs`, userId)
   },
   findSong(track){
     return axios.get(`${BASE_URL}/drum-machine/${track}`)
