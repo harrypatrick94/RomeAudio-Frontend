@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/harrypatrick94/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css",
-    "main.js": "/harrypatrick94/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js",
-    "main.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js.map",
-    "runtime-main.js": "/harrypatrick94/RomeAudio-Frontend/static/js/runtime-main.3830e23f.js",
-    "runtime-main.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/runtime-main.3830e23f.js.map",
-    "static/js/2.01bf27fc.chunk.js": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js",
-    "static/js/2.01bf27fc.chunk.js.map": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js.map",
-    "index.html": "/harrypatrick94/RomeAudio-Frontend/index.html",
-    "precache-manifest.52bf0febcee7e84beb435f2c04cd8efc.js": "/harrypatrick94/RomeAudio-Frontend/precache-manifest.52bf0febcee7e84beb435f2c04cd8efc.js",
-    "service-worker.js": "/harrypatrick94/RomeAudio-Frontend/service-worker.js",
-    "static/css/main.ec338a6c.chunk.css.map": "/harrypatrick94/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css.map",
-    "static/js/2.01bf27fc.chunk.js.LICENSE.txt": "/harrypatrick94/RomeAudio-Frontend/static/js/2.01bf27fc.chunk.js.LICENSE.txt"
+    "main.css": "/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css",
+    "main.js": "/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.6d1d80c1.chunk.js.map",
+    "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
+    "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
+    "static/js/2.264c9606.chunk.js": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js",
+    "static/js/2.264c9606.chunk.js.map": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js.map",
+    "index.html": "/RomeAudio-Frontend/index.html",
+    "precache-manifest.2e477fc2d4ef8596ac4c2c29c1b90786.js": "/RomeAudio-Frontend/precache-manifest.2e477fc2d4ef8596ac4c2c29c1b90786.js",
+    "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
+    "static/css/main.ec338a6c.chunk.css.map": "/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css.map",
+    "static/js/2.264c9606.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3830e23f.js",
-    "static/js/2.01bf27fc.chunk.js",
+    "static/js/runtime-main.c3a9ad64.js",
+    "static/js/2.264c9606.chunk.js",
     "static/css/main.ec338a6c.chunk.css",
     "static/js/main.6d1d80c1.chunk.js"
   ]
