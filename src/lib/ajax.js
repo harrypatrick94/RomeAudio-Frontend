@@ -24,7 +24,7 @@ export default {
       headers: {
         "Access-Control-Allow-Origin": "*",
         'Content-type': "application/json"
-      }
+      },
       email, password
     })
   },
