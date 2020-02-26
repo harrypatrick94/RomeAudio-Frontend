@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 
-const UserSongs = (songs) => {
-  console.log(songs);
+const UserSongs = (props) => {
+
+  // const [song , setSong] = useState('')
+// console.log(props.chooseSong);
+  const showSong = (song) => {
+    props.chooseSong(song)
+    console.log("songgggg: ", song.trackName);
+    // console.log("pick song: ", chooseSong);
+    // console.log(song);
+    
+
+  }
   return (
     <div className="userSongs">
       {
-        songs !== 0
+        props !== 0
         ?
-        songs.songs.map(song => {
+        props.songs.map(song => {
           return(
-            <h1>{song.trackName}</h1>
+            <h1 onClick={() => showSong(song)}>{song.trackName}</h1>
           )
         })
         :

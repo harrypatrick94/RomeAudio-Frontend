@@ -9,9 +9,14 @@ import axios from 'axios';
 const User = (props) => {
 
   const [user, setUser] = useState(undefined)
-  // const [sequence, setSequence] = useState([])
-  // console.log("token: ", window.localStorage.getItem("token"));
-  // console.log('header in user', axios.defaults.headers.common['Authorization']);
+  const [pickedSong, setPickedSong] = useState(null)
+
+  const pickSong = (picked) => {
+    // console.log("song to change", picked );
+    setPickedSong(picked)
+    console.log("picked in state: ", pickedSong);
+    props.history.push(`/user/${picked.trackName}`)
+  }
 
   useEffect(() => {
 
@@ -44,12 +49,12 @@ const User = (props) => {
           <h4>{user.email}</h4>
           <div className="drumMachineContainer">
             <div className="drumMachine">
-              <Sequencer />
+              <Sequencer picked={pickedSong}/>
             </div>
 
           </div>
           <div className="userSongs">
-            <UserSongs songs={user.beatz} />
+            <UserSongs songs={user.beatz} chooseSong={pickSong}/>
           </div>
         </div>
         :

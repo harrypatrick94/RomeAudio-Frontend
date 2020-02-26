@@ -8,7 +8,7 @@ import SaveButton from "./save-button"
 import Range from "./range"
 
 import "../styles.css";
-// let _ = require('lodash');
+let _ = require('lodash');
 const steps = 16
 
 // firstly initialise state of false (do nothing)
@@ -42,7 +42,6 @@ const Sequencer = (props) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [bpm, setBPM] = useState(120)
 
-
   // when a step is clicked on its state will be altered
   const toggleSound = (sound, step) => {
     // get row postion of toggle sound
@@ -69,7 +68,6 @@ const Sequencer = (props) => {
   // count each step
   const playStep = step => {
     // console.log("step: ", step);
-
     // loop through sequencer
     for (let i = 0; i < sequence.length; i++) {
       // console.log("length: ", sequence.length);
@@ -121,14 +119,21 @@ const Sequencer = (props) => {
         setPlayer(player);
       }
     ).toMaster();
-    setSequence(initialState)
+    if (props.picked !== null) {
+      console.log(props.picked);
+      console.log("propsss: ", props);
+    } else {
+      console.log("NULLLLLLL");
+    }
+
+    // setSequence(initialState)
   }, []);
   // step up stepper
   useEffect(() => {
 
-    // if (!(_.isEmpty(props.currentSong))) {
-    //   setSequence(props.currentSong)
-    // }
+    if (!(_.isEmpty(props.currentSong))) {
+      setSequence(props.currentSong)
+    }
     // start drum machine
     const timer = setTimeout(() => {
       if (playing) {
@@ -151,17 +156,15 @@ const Sequencer = (props) => {
         <div className="playButton">
           <PlayButton playing={playing} togglePlay={togglePlay} />
         </div>
-        {
-          window.localStorage.getItem("token")
-          ?
-          <div className="saveComponent">
-              <SaveButton sequence={sequence} />
-          </div>
-          :
-          <span></span>
-        }
-
-
+          {
+            window.localStorage.getItem("token")
+            ?
+            <div className="saveComponent">
+                <SaveButton sequence={sequence} />
+            </div>
+            :
+            <span>Sign up to save tracks</span>
+          }
         <div className="bpmRange" >
           <Range changeBPM={changeBPM} />
         </div>
