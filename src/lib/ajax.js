@@ -19,12 +19,7 @@ export default {
   },
   signIn(email, password){
     const url = `${BASE_URL}/signin`
-    return axios.post(url, {
-      method: "POST",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        'Content-type': "application/json"
-      },
+    return axios.post(url,
       email, password
     })
   },
