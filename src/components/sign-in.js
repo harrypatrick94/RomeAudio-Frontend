@@ -12,7 +12,7 @@ const SignIn = (props) => {
     e.preventDefault()
     ajax.signIn(email, password)
       .then(res => {
-        res.header("Access-Control-Allow-Origin", '*')
+        // res.header("Access-Control-Allow-Origin", '*')
         // console.log("successfull sign in: ", res)
         console.log("token created: ", res.data.token);
         window.localStorage.setItem("token", res.data.token)
