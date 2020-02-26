@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/RomeAudio-Frontend/static/css/main.8df8ee50.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.998f5b02.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.998f5b02.chunk.js.map",
+    "main.css": "/RomeAudio-Frontend/static/css/main.cdc263fd.chunk.css",
+    "main.js": "/RomeAudio-Frontend/static/js/main.bb9035d8.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.bb9035d8.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
-    "static/js/2.df523b4b.chunk.js": "/RomeAudio-Frontend/static/js/2.df523b4b.chunk.js",
-    "static/js/2.df523b4b.chunk.js.map": "/RomeAudio-Frontend/static/js/2.df523b4b.chunk.js.map",
+    "static/js/2.7579ffc1.chunk.js": "/RomeAudio-Frontend/static/js/2.7579ffc1.chunk.js",
+    "static/js/2.7579ffc1.chunk.js.map": "/RomeAudio-Frontend/static/js/2.7579ffc1.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.7a937b9ffe6edd606efb79535fe20072.js": "/RomeAudio-Frontend/precache-manifest.7a937b9ffe6edd606efb79535fe20072.js",
+    "precache-manifest.0c8e8608e464e8a85cafa7bef7f6e459.js": "/RomeAudio-Frontend/precache-manifest.0c8e8608e464e8a85cafa7bef7f6e459.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
-    "static/css/main.8df8ee50.chunk.css.map": "/RomeAudio-Frontend/static/css/main.8df8ee50.chunk.css.map",
-    "static/js/2.df523b4b.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.df523b4b.chunk.js.LICENSE.txt"
+    "static/css/main.cdc263fd.chunk.css.map": "/RomeAudio-Frontend/static/css/main.cdc263fd.chunk.css.map",
+    "static/js/2.7579ffc1.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.7579ffc1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c3a9ad64.js",
-    "static/js/2.df523b4b.chunk.js",
-    "static/css/main.8df8ee50.chunk.css",
-    "static/js/main.998f5b02.chunk.js"
+    "static/js/2.7579ffc1.chunk.js",
+    "static/css/main.cdc263fd.chunk.css",
+    "static/js/main.bb9035d8.chunk.js"
   ]
 }
