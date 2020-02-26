@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.319c8f35.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.319c8f35.chunk.js.map",
+    "main.js": "/RomeAudio-Frontend/static/js/main.c7dd7869.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.c7dd7869.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
     "static/js/2.264c9606.chunk.js": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js",
     "static/js/2.264c9606.chunk.js.map": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.4c9ff718a57656b49a963ce3b1b45490.js": "/RomeAudio-Frontend/precache-manifest.4c9ff718a57656b49a963ce3b1b45490.js",
+    "precache-manifest.17ea75b8456da6edf63f3eaac857ee26.js": "/RomeAudio-Frontend/precache-manifest.17ea75b8456da6edf63f3eaac857ee26.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
     "static/css/main.ec338a6c.chunk.css.map": "/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css.map",
     "static/js/2.264c9606.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c3a9ad64.js",
     "static/js/2.264c9606.chunk.js",
     "static/css/main.ec338a6c.chunk.css",
-    "static/js/main.319c8f35.chunk.js"
+    "static/js/main.c7dd7869.chunk.js"
   ]
 }

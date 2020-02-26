@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24b2db084551b9185034b1394212943b",
+    "revision": "d6912fb1969f570c63e8b895b7ffa64e",
     "url": "/RomeAudio-Frontend/index.html"
   },
   {
-    "revision": "3ce5dac96ae24efb2fa7",
+    "revision": "5684b44429b3adaf6f5c",
     "url": "/RomeAudio-Frontend/static/css/main.ec338a6c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RomeAudio-Frontend/static/js/2.264c9606.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ce5dac96ae24efb2fa7",
-    "url": "/RomeAudio-Frontend/static/js/main.319c8f35.chunk.js"
+    "revision": "5684b44429b3adaf6f5c",
+    "url": "/RomeAudio-Frontend/static/js/main.c7dd7869.chunk.js"
   },
   {
     "revision": "765ea7617b4ab867bbe1",
