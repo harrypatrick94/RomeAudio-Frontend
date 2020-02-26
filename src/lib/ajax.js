@@ -31,8 +31,8 @@ export default {
   },
   findSongs(userId){
     return axios.get(`${BASE_URL}/songs`, userId)
-  },
-  findSong(track){
-    return axios.get(`${BASE_URL}/drum-machine/${track}`)
   }
+  // findSong(track){
+  //   return axios.get(`${BASE_URL}/drum-machine/${track}`)
+  // }
 } // export
