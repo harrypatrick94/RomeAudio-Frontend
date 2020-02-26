@@ -5,7 +5,7 @@ import axios from 'axios';
 // let AUTH_TOKEN
 const SignIn = (props) => {
 
-  const [email, setEmail] = useState("benson@gamil.com")
+  const [email, setEmail] = useState("benson@gmail.com")
   const [password, setPassword] = useState("chicken")
 
   const signIn = (e) => {
@@ -44,7 +44,7 @@ const SignIn = (props) => {
     <div className="signInForm">
       <form onSubmit={signIn}>
         <label>Email:</label>
-        <input type="text" onChange={handleEmail} value="benson@gamil.com"/>
+        <input type="text" onChange={handleEmail} value="benson@gmail.com"/>
         <label>password:</label>
 
         <input type="text" onChange={handlePassword} value="chicken"/>
