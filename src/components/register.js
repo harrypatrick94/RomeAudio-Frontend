@@ -1,8 +1,10 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom"
 import ajax from '../lib/ajax'
+import axios from 'axios';
 import "../styles.css";
 
-const Register = () => {
+const Register = (props) => {
   const [userName, setUserName] = useState(undefined)
   const [email, setEmail] = useState(undefined)
   const [password, setPassword] = useState(undefined)
@@ -12,13 +14,33 @@ const Register = () => {
     ajax.registerUser(userName, email, password)
       .then(res => {
         console.log("successfull sign up ", res)
-        this.$emit(res.data)
+        // sign in on sign up
+        ajax.signIn(email, password)
+          .then(res => {
+            // res.header("Access-Control-Allow-Origin", '*')
+            // console.log("successfull sign in: ", res)
+            console.log("token created: ", res.data.token);
+            window.localStorage.setItem("token", res.data.token)
+            window.localStorage.setItem("userId", res.data.user.id)
+            axios.defaults.headers.common['Authorization'] = res.data.token;
+            console.log('header in signin', axios.defaults.headers.common['Authorization']);
+            props.history.push('/user');
+          })
+          .catch(
+            err => {
+              console.warn(err);
+            }
+          )
+        // this.$emit(res.data)
       })
       .catch(
         err => {
           console.warn(err);
         }
       )
+
+
+        console.log("after");
       setUserName(undefined)
       setEmail(undefined)
       setPassword(undefined)
@@ -60,7 +82,7 @@ const Register = () => {
               <input type="text" onChange={handlePassword}/>
             </li>
             <li className="registerFormLi">
-              <input type="submit"/>
+              <input type="submit"/><Link to="/signin">Sign in</Link>
             </li>
           </ul>
         </form>

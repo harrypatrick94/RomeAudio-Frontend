@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import io from 'socket.io-client'
 import Sequencer from "./sequencer";
 // import SaveButton from "./save-button"
 import SignOut from "./sign-out"
@@ -6,8 +7,10 @@ import UserSongs from "./user-songs"
 import ajax from '../lib/ajax'
 import axios from 'axios';
 
+
 const User = (props) => {
 
+  const socket = io('http://localhost:1337')
   const [user, setUser] = useState(undefined)
   const [pickedSong, setPickedSong] = useState(null)
 
@@ -16,6 +19,23 @@ const User = (props) => {
     setPickedSong(picked)
     console.log("picked in state: ", pickedSong);
     props.history.push(`/user/${picked.trackName}`)
+  }
+
+  const findUser = () => {
+    ajax.getUser()
+      .then(user => {
+
+        setUser(user.data)
+        console.log(user.data);
+        socket.on('ping', data => {
+          console.log('PING', data);
+          // get infomation here from back end deal with it and reserve booking
+        })
+        socket.emit("save song", console.log(user.data))
+        // console.log;
+        // this.$emit( 'song saved', res.data );
+      })
+      .catch(err => console.warn(err))
   }
 
   useEffect(() => {
@@ -29,12 +49,7 @@ const User = (props) => {
       // props.history.push("/user");
     }
     console.log("hook runnning");
-    ajax.getUser()
-      .then(user => {
-        setUser(user.data)
-        console.log(user.data);
-      })
-      .catch(err => console.warn(err))
+    findUser()
   }, [])
 
 
@@ -45,17 +60,17 @@ const User = (props) => {
         user !== undefined
         ?
         <div>
-          <h1>{user.userName}</h1>
-          <h4>{user.email}</h4>
+          <h4>Welcome {user.userName}</h4>
           <div className="drumMachineContainer">
             <div className="drumMachine">
               <Sequencer picked={pickedSong}/>
-            </div>
+              <div className="userSongs">
 
+                <UserSongs songs={user.beatz} chooseSong={pickSong}/>
+              </div>
+            </div>
           </div>
-          <div className="userSongs">
-            <UserSongs songs={user.beatz} chooseSong={pickSong}/>
-          </div>
+
         </div>
         :
         <h1>Loading . . .</h1>

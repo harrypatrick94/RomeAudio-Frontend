@@ -9,11 +9,11 @@ const UserSongs = (props) => {
     console.log("songgggg: ", song.trackName);
     // console.log("pick song: ", chooseSong);
     // console.log(song);
-    
+
 
   }
   return (
-    <div className="userSongs">
+    <div className="indivdualSongs">
       {
         props !== 0
         ?

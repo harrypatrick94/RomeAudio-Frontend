@@ -13,12 +13,14 @@ const SavedTrack = (props) => {
     .then(res => {
       console.log("data returned: ", res.data);
       let songs = res.data.beatz
+
       songs.map(t => {
         if (t.trackName === track) {
           console.log("found: ", track);
           console.log("track name: ", t.trackName);
           console.log("Song sequence: ", t.song);
           setSong(t.song)
+
         }
       })
     })
@@ -43,7 +45,6 @@ const SavedTrack = (props) => {
           <div>Loading ...</div>
         :
         <div>
-          Your Track is here <h1>RIGHT HERE</h1>
           <Sequencer currentSong={song}/>
         </div>
       }

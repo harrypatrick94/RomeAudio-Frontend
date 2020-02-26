@@ -5,8 +5,8 @@ const SaveButton = ({sequence}) => {
   // console.log("user id: ", window.localStorage.getItem("userId"));
   const [trackName, setTrackName] = useState("Sik Trak");
   const [authorName, setAuthorName] = useState("Haz")
-  const saveTrack = (e) => {
-    e.preventDefault()
+  const saveTrack = () => {
+    // e.preventDefault()
     console.log("Da Beat: ", sequence);
     console.log("Killa name: ", trackName);
     console.log("Author: ", authorName);
@@ -15,7 +15,7 @@ const SaveButton = ({sequence}) => {
     .then(res => {
       console.log("ajax post successfulw: ", res);
 
-      // this.$emit(res.data)
+
     })
     .catch(
       err => {

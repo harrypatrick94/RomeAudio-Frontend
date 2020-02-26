@@ -6,7 +6,7 @@ import DrumMachine from "./drum-machine"
 import PlayButton from "./play-button"
 import SaveButton from "./save-button"
 import Range from "./range"
-
+import {Link} from "react-router-dom"
 import "../styles.css";
 let _ = require('lodash');
 const steps = 16
@@ -148,7 +148,7 @@ const Sequencer = (props) => {
     };
   }, [currentStep, playing]);
   return(
-    <div>
+    <span>
       <div className="drumMachingBoard">
         <DrumMachine sequence={sequence} drumMachine={drumMachine} toggleSound={toggleSound} />
       </div>
@@ -159,17 +159,20 @@ const Sequencer = (props) => {
           {
             window.localStorage.getItem("token")
             ?
-            <div className="saveComponent">
-                <SaveButton sequence={sequence} />
+            <div>
+              <div className="saveComponent">
+                  <SaveButton sequence={sequence} />
+              </div>
+              <div className="bpmRange" >
+                <Range changeBPM={changeBPM} />
+              </div>
             </div>
             :
-            <span>Sign up to save tracks</span>
+            <div><Link to="/signin">Sign in to save tracks</Link></div>
           }
-        <div className="bpmRange" >
-          <Range changeBPM={changeBPM} />
-        </div>
+
       </div>
-    </div>
+    </span>
   )
 
 }; // sequence

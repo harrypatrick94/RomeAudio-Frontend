@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom"
 import ajax from '../lib/ajax'
 import axios from 'axios';
 import "../styles.css";
@@ -57,8 +58,9 @@ const SignIn = (props) => {
           <li className="signInFormLi">
             <input type="text" onChange={handlePassword} value="123456"/>
           </li>
+
           <li className="signInFormLi">
-            <input type="submit"/>
+            <input type="submit"/> <Link to="/register">Sign up</Link>
           </li>
         </ul>
       </form>

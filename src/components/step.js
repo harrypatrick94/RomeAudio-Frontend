@@ -130,7 +130,7 @@ const Step = styled.span.attrs(({ ready, play }) => ({
   width: 40px;
   height: 25px;
   border-radius: 4px;
-  margin: 10px;
+  margin: 7px;
   vertical-align: middle;
   horizontal-align: right;
 
