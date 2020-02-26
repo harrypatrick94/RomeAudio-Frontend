@@ -59,7 +59,7 @@ const Sequencer = (props) => {
     setSequence(sequenceCopy);
     // console.log("sequence: ",sequence);
     // updateSequence(sequenceCopy)
-    console.log("herererererererererere");
+    console.log("here");
   }; // toggle sound
   // start stop
   const togglePlay = () => {
