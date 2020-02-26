@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ajax from '../lib/ajax'
 import axios from 'axios';
-
+import "../styles.css";
 // let AUTH_TOKEN
 const SignIn = (props) => {
 
@@ -41,15 +41,28 @@ const SignIn = (props) => {
   }
 
   return(
+    <div className="container">
     <div className="signInForm">
       <form onSubmit={signIn}>
-        <label>Email:</label>
-        <input type="text" onChange={handleEmail} value="harry@gmail.com"/>
-        <label>password:</label>
-
-        <input type="text" onChange={handlePassword} value="123456"/>
-          <input type="submit"/>
+        <ul className="signInFormUl">
+          <li className="signInFormLi">
+            <label>Email</label>
+          </li>
+          <li className="signInFormLi">
+            <input type="text" onChange={handleEmail} value="harry@gmail.com"/>
+          </li>
+          <li className="signInFormLi">
+            <label>Password</label>
+          </li>
+          <li className="signInFormLi">
+            <input type="text" onChange={handlePassword} value="123456"/>
+          </li>
+          <li className="signInFormLi">
+            <input type="submit"/>
+          </li>
+        </ul>
       </form>
+    </div>
     </div>
   )
 };

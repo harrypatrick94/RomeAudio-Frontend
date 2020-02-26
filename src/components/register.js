@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ajax from '../lib/ajax'
+import "../styles.css";
 
 const Register = () => {
   const [userName, setUserName] = useState(undefined)
@@ -34,18 +35,36 @@ const Register = () => {
     let password = e.target.value
     setPassword(password)
   }
-  
+
   return(
-    <div className="registerForm">
-      <form onSubmit={register}>
-        <label>User name:</label>
-        <input type="text" onChange={handleUserName}/>
-        <label>Email:</label>
-        <input type="text" onChange={handleEmail}/>
-        <label>password:</label>
-        <input type="text" onChange={handlePassword}/>
-        <input type="submit"/>
-      </form>
+    <div className="container">
+      <div className="registerForm">
+        <form onSubmit={register}>
+          <ul className="registerFormUl">
+            <li className="registerFormLi">
+              <label>User name</label>
+            </li>
+            <li className="registerFormLi">
+              <input type="text" onChange={handleUserName}/>
+            </li>
+            <li className="registerFormLi">
+              <label>Email</label>
+            </li>
+            <li className="registerFormLi">
+              <input type="text" onChange={handleEmail}/>
+            </li>
+            <li className="registerFormLi">
+              <label>password</label>
+            </li>
+            <li className="registerFormLi">
+              <input type="text" onChange={handlePassword}/>
+            </li>
+            <li className="registerFormLi">
+              <input type="submit"/>
+            </li>
+          </ul>
+        </form>
+      </div>
     </div>
   )
 };

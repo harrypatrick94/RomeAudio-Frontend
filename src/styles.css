@@ -48,3 +48,25 @@ input {
   vertical-align: top;
   margin-top: 5px;
 }
+
+.container {
+  display: flex;
+
+}
+
+.signInForm, .registerForm {
+  border: 1px solid black;
+  display: inline;
+  padding: 20px 60px;
+  font-size: 20px;
+  text-align: center;
+  margin: 200px auto;
+  text-transform: uppercase;
+  border-radius: 10px;
+
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
