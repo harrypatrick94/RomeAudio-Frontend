@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f2c6b252fa5b48ec6ab01bba784592a",
+    "revision": "9b3a1e3aabf3f7599d55dba186ba361a",
     "url": "/RomeAudio-Frontend/index.html"
   },
   {
-    "revision": "9a0591bfb052dbc4748f",
-    "url": "/RomeAudio-Frontend/static/css/main.6dca193f.chunk.css"
+    "revision": "52c24a503d718bc3334b",
+    "url": "/RomeAudio-Frontend/static/css/main.a36c1532.chunk.css"
   },
   {
-    "revision": "7d0ccc0b58a4a6a41fef",
-    "url": "/RomeAudio-Frontend/static/js/2.5b575682.chunk.js"
+    "revision": "e59f42115fc076fb1304",
+    "url": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js"
   },
   {
-    "revision": "b7ca73b6f678164ca76e42cc6b6448db",
-    "url": "/RomeAudio-Frontend/static/js/2.5b575682.chunk.js.LICENSE.txt"
+    "revision": "2ea7e6e51320459fdbf765ce44113abd",
+    "url": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a0591bfb052dbc4748f",
-    "url": "/RomeAudio-Frontend/static/js/main.73589182.chunk.js"
+    "revision": "52c24a503d718bc3334b",
+    "url": "/RomeAudio-Frontend/static/js/main.e13894e7.chunk.js"
   },
   {
     "revision": "765ea7617b4ab867bbe1",
