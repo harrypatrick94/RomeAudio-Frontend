@@ -6,16 +6,16 @@ const getBackground = (ready, play) => {
   switch (true) {
     // darken each cell ready and trigger
     case ready && play:
-      return "white";
+      return "#fdeeb7";
     // is ready turn color green
     case ready && !play:
       return "red";
     // keep track step count in color
     case !ready && play:
-      return "white";
+      return "#fdeeb7";
     // false state (unactive and not play)
     default:
-      return "rgba(130, 130, 130, 0.6)";
+      return "#b5f6ff";
   }
 };
 const getBoxShadow = (ready, play) => {

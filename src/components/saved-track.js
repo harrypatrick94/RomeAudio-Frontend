@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from "react";
 import ajax from '../lib/ajax';
 import axios from 'axios';
+import UserSongs from "./user-songs"
 import Sequencer from './sequencer';
 let _ = require('lodash');
+
 const SavedTrack = (props) => {
   const [song, setSong] = useState({})
+  const [tracks, setTrack] = useState({})
+  const [user, setUser] = useState('')
   // console.log(props.match.params.trackName);
   const getSong = () => {
     let track = props.match.params.trackName
@@ -13,6 +17,10 @@ const SavedTrack = (props) => {
     .then(res => {
       console.log("data returned: ", res.data);
       let songs = res.data.beatz
+      let newUser = res.data.userName
+      console.log(newUser);
+      setTrack(songs)
+      setUser(newUser)
 
       songs.map(t => {
         if (t.trackName === track) {
@@ -26,6 +34,7 @@ const SavedTrack = (props) => {
     })
     .catch(err => console.warn("Song search error: ", err))
   }
+
   useEffect(() => {
     if (window.localStorage.getItem("token")) {
       const token = window.localStorage.getItem("token")
@@ -36,16 +45,29 @@ const SavedTrack = (props) => {
       getSong()
   },[])
 
+  const pickSong = (picked) => {
+    // setSong(picked.song)
+    console.log("picked in state: ", picked.song);
+    props.history.push(`/user/${picked.trackName}`)
+  }
+
   return(
 
     <div>
+
       {
         _.isEmpty(song)
         ?
           <div>Loading ...</div>
         :
         <div>
-          <Sequencer currentSong={song}/>
+          <h4>Welcome {user}</h4>
+          <div>
+            <Sequencer currentSong={song}/>
+          </div>
+          <div className="userSongs">
+            <UserSongs songs={tracks} chooseSong={pickSong}/>
+          </div>
         </div>
       }
 

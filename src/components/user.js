@@ -65,7 +65,6 @@ const User = (props) => {
             <div className="drumMachine">
               <Sequencer picked={pickedSong}/>
               <div className="userSongs">
-
                 <UserSongs songs={user.beatz} chooseSong={pickSong}/>
               </div>
             </div>
