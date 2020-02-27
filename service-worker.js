@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/RomeAudio-Frontend/precache-manifest.f5be174247bc7bde58e50b72c1285c04.js"
+  "/RomeAudio-Frontend/precache-manifest.030ce8bfed85e270a72d272de943c2bc.js"
 );
 
 self.addEventListener('message', (event) => {
