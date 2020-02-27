@@ -101,17 +101,17 @@ const Sequencer = (props) => {
   useEffect(() => {
     const player = new Tone.Players(
       {
-        CP: "/sounds/909-sounds/909-clap.wav",
-        CH: "/sounds/909-sounds/909-closedHat.wav",
-        CR: "/sounds/909-sounds/909-crash.wav",
-        BD: "/sounds/909-sounds/909-kick.wav",
-        OH: "/sounds/909-sounds/909-openHat.wav",
-        RD: "/sounds/909-sounds/909-ride.wav",
-        RS: "/sounds/909-sounds/909-rimShot.wav",
-        SN: "/sounds/909-sounds/909-snare.wav",
-        TA: "/sounds/909-sounds/909-tom.wav",
-        TB: "/sounds/909-sounds/909-tomOne.wav",
-        TC: "/sounds/909-sounds/909-tomTwo.wav"
+        CP: "../../public/sounds/909-sounds/909-clap.wav",
+        CH: "../../public/sounds/909-sounds/909-closedHat.wav",
+        CR: "../../public/sounds/909-sounds/909-crash.wav",
+        BD: "../../public/sounds/909-sounds/909-kick.wav",
+        OH: "../../public/sounds/909-sounds/909-openHat.wav",
+        RD: "../../public/sounds/909-sounds/909-ride.wav",
+        RS: "../../public/sounds/909-sounds/909-rimShot.wav",
+        SN: "../../public/sounds/909-sounds/909-snare.wav",
+        TA: "../../public/sounds/909-sounds/909-tom.wav",
+        TB: "../../public/sounds/909-sounds/909-tomOne.wav",
+        TC: "../../public/sounds/909-sounds/909-tomTwo.wav"
 
       },
       () => {
