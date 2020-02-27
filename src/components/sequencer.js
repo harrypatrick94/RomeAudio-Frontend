@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Tone from "tone";
 // import sounds
-import cp from "../../public/sounds/909-sounds/909-clap.wav"
-import ch from "../../public/sounds/909-sounds/909-closedHat.wav"
-import cr from "../../public/sounds/909-sounds/909-crash.wav"
-import bd from "../../public/sounds/909-sounds/909-kick.wav"
-import oh from "../../public/sounds/909-sounds/909-openHat.wav"
-import rd from "../../public/sounds/909-sounds/909-ride.wav"
-import rs from "../../public/sounds/909-sounds/909-rimShot.wav"
-import sn from "../../public/sounds/909-sounds/909-snare.wav"
-import ta from "../../public/sounds/909-sounds/909-tom.wav"
-import tb from "../../public/sounds/909-sounds/909-tomOne.wav"
-import tc from "../../public/sounds/909-sounds/909-tomTwo.wav"
+import cp from "../sounds/909-sounds/909-clap.wav"
+import ch from "../sounds/909-sounds/909-closedHat.wav"
+import cr from "../sounds/909-sounds/909-crash.wav"
+import bd from "../sounds/909-sounds/909-kick.wav"
+import oh from "../sounds/909-sounds/909-openHat.wav"
+import rd from "../sounds/909-sounds/909-ride.wav"
+import rs from "../sounds/909-sounds/909-rimShot.wav"
+import sn from "../sounds/909-sounds/909-snare.wav"
+import ta from "../sounds/909-sounds/909-tom.wav"
+import tb from "../sounds/909-sounds/909-tomOne.wav"
+import tc from "../sounds/909-sounds/909-tomTwo.wav"
 
 // use hooks to use state without writing a class
 // import PlayerProvider from "./player-provider";
