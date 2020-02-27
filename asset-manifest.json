@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/RomeAudio-Frontend/static/css/main.7a92e2fc.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.27043067.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.27043067.chunk.js.map",
+    "main.css": "/RomeAudio-Frontend/static/css/main.2703a4bf.chunk.css",
+    "main.js": "/RomeAudio-Frontend/static/js/main.fd873350.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.fd873350.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
-    "static/js/2.e85e50ed.chunk.js": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js",
-    "static/js/2.e85e50ed.chunk.js.map": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js.map",
+    "static/js/2.fa249e66.chunk.js": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js",
+    "static/js/2.fa249e66.chunk.js.map": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.de47c6e92d74ad8c2d1a50bc84e17111.js": "/RomeAudio-Frontend/precache-manifest.de47c6e92d74ad8c2d1a50bc84e17111.js",
+    "precache-manifest.f5be174247bc7bde58e50b72c1285c04.js": "/RomeAudio-Frontend/precache-manifest.f5be174247bc7bde58e50b72c1285c04.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
-    "static/css/main.7a92e2fc.chunk.css.map": "/RomeAudio-Frontend/static/css/main.7a92e2fc.chunk.css.map",
-    "static/js/2.e85e50ed.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js.LICENSE.txt",
+    "static/css/main.2703a4bf.chunk.css.map": "/RomeAudio-Frontend/static/css/main.2703a4bf.chunk.css.map",
+    "static/js/2.fa249e66.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.LICENSE.txt",
     "static/media/909-clap.wav": "/RomeAudio-Frontend/static/media/909-clap.0eed7aa0.wav",
     "static/media/909-closedHat.wav": "/RomeAudio-Frontend/static/media/909-closedHat.854186b3.wav",
     "static/media/909-crash.wav": "/RomeAudio-Frontend/static/media/909-crash.399866ff.wav",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c3a9ad64.js",
-    "static/js/2.e85e50ed.chunk.js",
-    "static/css/main.7a92e2fc.chunk.css",
-    "static/js/main.27043067.chunk.js"
+    "static/js/2.fa249e66.chunk.js",
+    "static/css/main.2703a4bf.chunk.css",
+    "static/js/main.fd873350.chunk.js"
   ]
 }
