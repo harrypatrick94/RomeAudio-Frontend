@@ -39,7 +39,7 @@ const SaveButton = ({sequence}) => {
       <form onSubmit={saveTrack}>
         <input type="text" placeholder="Trak Name" className="input" onChange={handleChangeTrak}/>
         <input type="text" placeholder="Author" className="input" onChange={handleChangeName}/>
-        <input type="submit"/>
+        <input type="submit" className="input"/>
       </form>
     </div>
   )
