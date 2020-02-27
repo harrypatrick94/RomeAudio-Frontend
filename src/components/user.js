@@ -5,8 +5,7 @@ import Sequencer from "./sequencer";
 import SignOut from "./sign-out"
 import UserSongs from "./user-songs"
 import "../styles.css";
-import ajax from '../lib/ajax'
-
+import ajax from '../lib/ajax';
 import axios from 'axios';
 
 
@@ -29,13 +28,13 @@ const User = (props) => {
 
         setUser(user.data)
         console.log(user.data);
-        // socket.on('ping', data => {
-          // console.log('PING', data);
+        socket.on('savedSong', data => {
+          console.log('Saved', data);
           // get infomation here from back end deal with it and reserve booking
-        // })
+        })
         // socket.emit("save song", console.log(user.data))
-        // console.log;
-        // this.$emit( 'song saved', res.data );
+
+        // socket.emit( 'song saved', user.data );
       })
       .catch(err => console.warn(err))
   }
@@ -52,6 +51,7 @@ const User = (props) => {
     }
     // console.log("hook runnning");
     findUser()
+    // socket.emit("save song", console.log(user.data))
   }, [])
 
 

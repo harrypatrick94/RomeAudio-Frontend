@@ -3,8 +3,8 @@ import axios from 'axios';
 // Define the API domain and paths we need for our requests
 // The paths depend on what is defined in the Rails routes.rb file
 
-// const BASE_URL = 'https://rome-audio-backend.herokuapp.com';
-const BASE_URL = 'http://localhost:1337'
+const BASE_URL = 'https://rome-audio-backend.herokuapp.com';
+// const BASE_URL = 'http://localhost:1337'
 
 
 
