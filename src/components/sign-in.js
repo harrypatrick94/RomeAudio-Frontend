@@ -50,13 +50,13 @@ const SignIn = (props) => {
             <label>Email</label>
           </li>
           <li className="signInFormLi">
-            <input type="text" onChange={handleEmail} value=""/>
+            <input type="text" onChange={handleEmail} />
           </li>
           <li className="signInFormLi">
             <label>Password</label>
           </li>
           <li className="signInFormLi">
-            <input type="text" onChange={handlePassword} value=""/>
+            <input type="text" onChange={handlePassword} />
           </li>
 
           <li className="signInFormLi">
