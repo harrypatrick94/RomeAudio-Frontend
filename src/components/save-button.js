@@ -5,7 +5,7 @@ const SaveButton = ({sequence}) => {
   // console.log("user id: ", window.localStorage.getItem("userId"));
   const [trackName, setTrackName] = useState("Sik Trak");
   const [authorName, setAuthorName] = useState("Haz")
-  const saveTrack = () => {
+  const saveTrack = (e) => {
     e.preventDefault()
     console.log("Da Beat: ", sequence);
     console.log("Killa name: ", trackName);
