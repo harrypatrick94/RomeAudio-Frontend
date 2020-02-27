@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/RomeAudio-Frontend/static/css/main.a36c1532.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.4357eef7.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.4357eef7.chunk.js.map",
+    "main.js": "/RomeAudio-Frontend/static/js/main.8ca9f239.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.8ca9f239.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
-    "static/js/2.fa249e66.chunk.js": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js",
-    "static/js/2.fa249e66.chunk.js.map": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.map",
+    "static/js/2.5b575682.chunk.js": "/RomeAudio-Frontend/static/js/2.5b575682.chunk.js",
+    "static/js/2.5b575682.chunk.js.map": "/RomeAudio-Frontend/static/js/2.5b575682.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.4d6e59dcbc2421e9553e1d1c64dab212.js": "/RomeAudio-Frontend/precache-manifest.4d6e59dcbc2421e9553e1d1c64dab212.js",
+    "precache-manifest.a9c01998735dffd3282ddd1c03bae5e7.js": "/RomeAudio-Frontend/precache-manifest.a9c01998735dffd3282ddd1c03bae5e7.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
     "static/css/main.a36c1532.chunk.css.map": "/RomeAudio-Frontend/static/css/main.a36c1532.chunk.css.map",
-    "static/js/2.fa249e66.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.LICENSE.txt",
+    "static/js/2.5b575682.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.5b575682.chunk.js.LICENSE.txt",
     "static/media/909-clap.wav": "/RomeAudio-Frontend/static/media/909-clap.0eed7aa0.wav",
     "static/media/909-closedHat.wav": "/RomeAudio-Frontend/static/media/909-closedHat.854186b3.wav",
     "static/media/909-crash.wav": "/RomeAudio-Frontend/static/media/909-crash.399866ff.wav",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c3a9ad64.js",
-    "static/js/2.fa249e66.chunk.js",
+    "static/js/2.5b575682.chunk.js",
     "static/css/main.a36c1532.chunk.css",
-    "static/js/main.4357eef7.chunk.js"
+    "static/js/main.8ca9f239.chunk.js"
   ]
 }
