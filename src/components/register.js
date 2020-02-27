@@ -82,11 +82,12 @@ const Register = (props) => {
               <input type="text" className="input" onChange={handlePassword}/>
             </li>
             <li >
-              <input type="submit" className="signInUp"/><Link to="/signin">Sign in</Link>
+              <input type="submit" className="signInUp"/>
             </li>
           </ul>
         </form>
       </div>
+        <span className="tosignInUpLink"><Link to="/signin">To Sign in</Link></span>
     </div>
   )
 };

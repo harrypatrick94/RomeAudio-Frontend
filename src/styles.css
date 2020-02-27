@@ -122,6 +122,7 @@ ul {
   border-radius: 5px;
   background: #fdeeb7;
   box-shadow: 1px 1px 1px 1px #b5f6ff;
+
 }
 
 .userName, .yourTrakz {
@@ -147,4 +148,10 @@ a {
   border-radius: 5px;
   background: #fdeeb7;
   box-shadow: 1px 1px 1px 1px #b5f6ff;
+}
+
+.tosignInUpLink {
+  margin-right: 10px;
+  font-size: 20px;
+  display: inline-block;
 }

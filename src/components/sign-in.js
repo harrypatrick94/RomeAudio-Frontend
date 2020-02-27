@@ -60,11 +60,12 @@ const SignIn = (props) => {
           </li>
 
           <li >
-            <input type="submit" className="signInUp"/> <Link to="/register">Sign up</Link>
+            <input type="submit" className="signInUp"/>
           </li>
         </ul>
       </form>
     </div>
+    <span className="tosignInUpLink" ><Link to="/register">To Sign up</Link></span>
     </div>
   )
 };

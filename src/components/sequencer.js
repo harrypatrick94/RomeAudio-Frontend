@@ -182,7 +182,7 @@ const Sequencer = (props) => {
               </div>
             </div>
             :
-            <div><Link to="/signin">Sign in to save tracks</Link></div>
+            <div><Link to="/register">Sign up to save tracks</Link></div>
           }
 
       </div>
