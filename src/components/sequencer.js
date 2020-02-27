@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Tone from "tone";
+// import sounds
+import cp from "../../public/sounds/909-sounds/909-clap.wav"
+import ch from "../../public/sounds/909-sounds/909-closedHat.wav"
+import cr from "../../public/sounds/909-sounds/909-crash.wav"
+import bd from "../../public/sounds/909-sounds/909-kick.wav"
+import oh from "../../public/sounds/909-sounds/909-openHat.wav"
+import rd from "../../public/sounds/909-sounds/909-ride.wav"
+import rs from "../../public/sounds/909-sounds/909-rimShot.wav"
+import sn from "../../public/sounds/909-sounds/909-snare.wav"
+import ta from "../../public/sounds/909-sounds/909-tom.wav"
+import tb from "../../public/sounds/909-sounds/909-tomOne.wav"
+import tc from "../../public/sounds/909-sounds/909-tomTwo.wav"
+
 // use hooks to use state without writing a class
 // import PlayerProvider from "./player-provider";
 import DrumMachine from "./drum-machine"
@@ -101,17 +114,17 @@ const Sequencer = (props) => {
   useEffect(() => {
     const player = new Tone.Players(
       {
-        CP: "../../public/sounds/909-sounds/909-clap.wav",
-        CH: "../../public/sounds/909-sounds/909-closedHat.wav",
-        CR: "../../public/sounds/909-sounds/909-crash.wav",
-        BD: "../../public/sounds/909-sounds/909-kick.wav",
-        OH: "../../public/sounds/909-sounds/909-openHat.wav",
-        RD: "../../public/sounds/909-sounds/909-ride.wav",
-        RS: "../../public/sounds/909-sounds/909-rimShot.wav",
-        SN: "../../public/sounds/909-sounds/909-snare.wav",
-        TA: "../../public/sounds/909-sounds/909-tom.wav",
-        TB: "../../public/sounds/909-sounds/909-tomOne.wav",
-        TC: "../../public/sounds/909-sounds/909-tomTwo.wav"
+        CP: cp,
+        CH: ch,
+        CR: cr,
+        BD: bd,
+        OH: oh,
+        RD: rd,
+        RS: rs,
+        SN: sn,
+        TA: ta,
+        TB: tb,
+        TC: tc
 
       },
       () => {
