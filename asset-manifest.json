@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RomeAudio-Frontend/static/css/main.2703a4bf.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.28b240de.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.28b240de.chunk.js.map",
+    "main.css": "/RomeAudio-Frontend/static/css/main.ef682664.chunk.css",
+    "main.js": "/RomeAudio-Frontend/static/js/main.5487e76b.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.5487e76b.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
     "static/js/2.fa249e66.chunk.js": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js",
     "static/js/2.fa249e66.chunk.js.map": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.030ce8bfed85e270a72d272de943c2bc.js": "/RomeAudio-Frontend/precache-manifest.030ce8bfed85e270a72d272de943c2bc.js",
+    "precache-manifest.5a8fe7805e09aa9c21351f27a24c102e.js": "/RomeAudio-Frontend/precache-manifest.5a8fe7805e09aa9c21351f27a24c102e.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
-    "static/css/main.2703a4bf.chunk.css.map": "/RomeAudio-Frontend/static/css/main.2703a4bf.chunk.css.map",
+    "static/css/main.ef682664.chunk.css.map": "/RomeAudio-Frontend/static/css/main.ef682664.chunk.css.map",
     "static/js/2.fa249e66.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.fa249e66.chunk.js.LICENSE.txt",
     "static/media/909-clap.wav": "/RomeAudio-Frontend/static/media/909-clap.0eed7aa0.wav",
     "static/media/909-closedHat.wav": "/RomeAudio-Frontend/static/media/909-closedHat.854186b3.wav",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.c3a9ad64.js",
     "static/js/2.fa249e66.chunk.js",
-    "static/css/main.2703a4bf.chunk.css",
-    "static/js/main.28b240de.chunk.js"
+    "static/css/main.ef682664.chunk.css",
+    "static/js/main.5487e76b.chunk.js"
   ]
 }
