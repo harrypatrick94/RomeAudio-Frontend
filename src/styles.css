@@ -3,7 +3,7 @@
 body {
   margin: 0;
   background: #fdeeb7;
-  font-family: 'Oxanium' ;
+  font-family: 'Oxanium';
   text-shadow: 1px 1px red;
 }
 
@@ -32,6 +32,7 @@ input {
   margin: 5px;
   border: 1px solid black;
   padding: 3px;
+  font-family: 'Oxanium';
 }
 
 .playButton {
@@ -139,6 +140,7 @@ ul {
 a {
   color: black;
   text-decoration: none;
+  font-family: 'Oxanium';
 }
 
 .input {
