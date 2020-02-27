@@ -1,22 +1,33 @@
 {
   "files": {
     "main.css": "/RomeAudio-Frontend/static/css/main.7a92e2fc.chunk.css",
-    "main.js": "/RomeAudio-Frontend/static/js/main.af764667.chunk.js",
-    "main.js.map": "/RomeAudio-Frontend/static/js/main.af764667.chunk.js.map",
+    "main.js": "/RomeAudio-Frontend/static/js/main.386f05c1.chunk.js",
+    "main.js.map": "/RomeAudio-Frontend/static/js/main.386f05c1.chunk.js.map",
     "runtime-main.js": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js",
     "runtime-main.js.map": "/RomeAudio-Frontend/static/js/runtime-main.c3a9ad64.js.map",
-    "static/js/2.4a58c177.chunk.js": "/RomeAudio-Frontend/static/js/2.4a58c177.chunk.js",
-    "static/js/2.4a58c177.chunk.js.map": "/RomeAudio-Frontend/static/js/2.4a58c177.chunk.js.map",
+    "static/js/2.e85e50ed.chunk.js": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js",
+    "static/js/2.e85e50ed.chunk.js.map": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js.map",
     "index.html": "/RomeAudio-Frontend/index.html",
-    "precache-manifest.44a59c17a06ff1f912df46f1673fe804.js": "/RomeAudio-Frontend/precache-manifest.44a59c17a06ff1f912df46f1673fe804.js",
+    "precache-manifest.55e5f623d69f5c10bba216d4557289ef.js": "/RomeAudio-Frontend/precache-manifest.55e5f623d69f5c10bba216d4557289ef.js",
     "service-worker.js": "/RomeAudio-Frontend/service-worker.js",
     "static/css/main.7a92e2fc.chunk.css.map": "/RomeAudio-Frontend/static/css/main.7a92e2fc.chunk.css.map",
-    "static/js/2.4a58c177.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.4a58c177.chunk.js.LICENSE.txt"
+    "static/js/2.e85e50ed.chunk.js.LICENSE.txt": "/RomeAudio-Frontend/static/js/2.e85e50ed.chunk.js.LICENSE.txt",
+    "static/media/909-clap.wav": "/RomeAudio-Frontend/static/media/909-clap.0eed7aa0.wav",
+    "static/media/909-closedHat.wav": "/RomeAudio-Frontend/static/media/909-closedHat.854186b3.wav",
+    "static/media/909-crash.wav": "/RomeAudio-Frontend/static/media/909-crash.399866ff.wav",
+    "static/media/909-kick.wav": "/RomeAudio-Frontend/static/media/909-kick.56d0ab65.wav",
+    "static/media/909-openHat.wav": "/RomeAudio-Frontend/static/media/909-openHat.81fbfa57.wav",
+    "static/media/909-ride.wav": "/RomeAudio-Frontend/static/media/909-ride.43395fea.wav",
+    "static/media/909-rimShot.wav": "/RomeAudio-Frontend/static/media/909-rimShot.3c8134ae.wav",
+    "static/media/909-snare.wav": "/RomeAudio-Frontend/static/media/909-snare.00182820.wav",
+    "static/media/909-tom.wav": "/RomeAudio-Frontend/static/media/909-tom.87263f19.wav",
+    "static/media/909-tomOne.wav": "/RomeAudio-Frontend/static/media/909-tomOne.a3465745.wav",
+    "static/media/909-tomTwo.wav": "/RomeAudio-Frontend/static/media/909-tomTwo.b91c45d6.wav"
   },
   "entrypoints": [
     "static/js/runtime-main.c3a9ad64.js",
-    "static/js/2.4a58c177.chunk.js",
+    "static/js/2.e85e50ed.chunk.js",
     "static/css/main.7a92e2fc.chunk.css",
-    "static/js/main.af764667.chunk.js"
+    "static/js/main.386f05c1.chunk.js"
   ]
 }
