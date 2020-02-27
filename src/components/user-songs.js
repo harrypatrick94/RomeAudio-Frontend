@@ -11,20 +11,26 @@ const UserSongs = (props) => {
     // console.log(song);
 
   }
-  
+
   return (
-    <div className="indivdualSongs">
-      {
-        props !== 0
-        ?
-        props.songs.map(song => {
-          return(
-            <h1 onClick={() => showSong(song)}>{song.trackName}</h1>
-          )
-        })
-        :
-        <h4>Loading</h4>
-      }
+    <div>
+      <div className="indivdualSongs">
+        <h1 className="yourTrakz">Your trakz</h1>
+        {
+          props !== 0
+          ?
+          props.songs.map(song => {
+            return(
+
+              <h1 onClick={() => showSong(song)}>{song.trackName}</h1>
+            )
+          })
+          :
+          <h4>Loading</h4>
+        }
+
+      </div>
+
     </div>
   )
 }

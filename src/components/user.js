@@ -4,7 +4,9 @@ import Sequencer from "./sequencer";
 // import SaveButton from "./save-button"
 import SignOut from "./sign-out"
 import UserSongs from "./user-songs"
+import "../styles.css";
 import ajax from '../lib/ajax'
+
 import axios from 'axios';
 
 
@@ -56,11 +58,12 @@ const User = (props) => {
   return(
 
     <div className="userHome">
+
       {
         user !== undefined
         ?
         <div>
-          <h4>Welcome {user.userName}</h4>
+          <h1 className="userName">Welcome {user.userName}</h1>
           <div className="drumMachineContainer">
             <div className="drumMachine">
               <Sequencer picked={pickedSong}/>

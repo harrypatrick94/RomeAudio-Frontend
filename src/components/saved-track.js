@@ -2,7 +2,9 @@ import React, {useState, useEffect} from "react";
 import ajax from '../lib/ajax';
 import axios from 'axios';
 import UserSongs from "./user-songs"
+import SignOut from "./sign-out"
 import Sequencer from './sequencer';
+import "../styles.css";
 let _ = require('lodash');
 
 const SavedTrack = (props) => {
@@ -61,7 +63,7 @@ const SavedTrack = (props) => {
           <div>Loading ...</div>
         :
         <div>
-          <h4>Welcome {user}</h4>
+          <h1 className="userName">Welcome {user}</h1>
           <div>
             <Sequencer currentSong={song}/>
           </div>
@@ -70,7 +72,7 @@ const SavedTrack = (props) => {
           </div>
         </div>
       }
-
+        <SignOut {...props} />
     </div>
   )
 };

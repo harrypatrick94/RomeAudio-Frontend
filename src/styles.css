@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
 body {
   margin: 0;
-    background: #fdeeb7;
+  background: #fdeeb7;
+  font-family: 'Oxanium' ;
 }
 
 .App {
@@ -38,6 +41,7 @@ input {
 }
 
 .gearBox {
+  padding: 3px;
   display: inline-block;
   border-radius: 10px;
   border: 1px solid black;
@@ -50,16 +54,23 @@ input {
 }
 
 .rangeInput {
+
   vertical-align: middle;
-  padding-left: 10px;
   transform: scaleX(-1);
 }
 
 .signOut {
+  justify-content: center;
   display: inline-block;
   border: 1px solid black;
   vertical-align: top;
-  margin-top: 5px;
+  margin: 30px;
+  padding: 3px;
+  background: #ffaebb;
+  box-shadow: 3px 3px 1px 2px #b5f6ff;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
 }
 
 .container {
@@ -92,9 +103,9 @@ ul {
   display: inline-block;
   justify-content: flex-end;
   position: absolute;
-  right: 70px;
+  right: 60px;
   z-index: 10;
-  top: 185px;
+  top: 210px;
   height: 405px;
   width: 270px;
   overflow: scroll;
@@ -103,6 +114,16 @@ ul {
   box-shadow: 5px 5px 5px 5px #b5f6ff;
 }
 
-.div {
-  display: inline-block;
+
+
+.userName, .yourTrakz {
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 1px 1px red;
+
+}
+
+.userName {
+
 }
