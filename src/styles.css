@@ -46,6 +46,7 @@ input {
   border-radius: 10px;
   border: 1px solid black;
   vertical-align: top;
+  height: 100px;
   margin-top: 5px;
   margin-left: 37px;
   justify-content: flex-end;
@@ -124,6 +125,7 @@ ul {
 
 }
 
-.userName {
-
+a {
+  color: black;
+  text-decoration: none;
 }

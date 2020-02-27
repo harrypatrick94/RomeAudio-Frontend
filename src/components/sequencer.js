@@ -159,7 +159,8 @@ const Sequencer = (props) => {
     return () => {
       clearTimeout(timer);
     };
-  }, [currentStep, playing]);
+    // watch for these states to update then update state
+  }, [currentStep, playing, props.currentSong]);
   return(
     <span>
       <div className="drumMachingBoard">

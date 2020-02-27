@@ -24,20 +24,26 @@ const SavedTrack = (props) => {
       setTrack(songs)
       setUser(newUser)
 
-      songs.map(t => {
-        if (t.trackName === track) {
-          console.log("found: ", track);
-          console.log("track name: ", t.trackName);
-          console.log("Song sequence: ", t.song);
-          setSong(t.song)
+      const foundSong = songs.find( s => s.trackName === track );
+      console.log("found: ", foundSong);
+      setSong(foundSong.song);
 
-        }
-      })
+      // songs.map(t => {
+      //   if (t.trackName === track) {
+      //     console.log("found: ", track);
+      //     console.log("track name: ", t.trackName);
+      //     console.log("Song sequence: ", t.song);
+      //     setSong(t.song)
+      //   }
+      // });
+
+
     })
     .catch(err => console.warn("Song search error: ", err))
   }
 
   useEffect(() => {
+    console.log('useEffect UPDATE SONG');
     if (window.localStorage.getItem("token")) {
       const token = window.localStorage.getItem("token")
       axios.defaults.headers.common['Authorization'] = token;
@@ -45,7 +51,7 @@ const SavedTrack = (props) => {
       console.log('token not here');
     }
       getSong()
-  },[])
+  }, [props.match.params.trackName] );
 
   const pickSong = (picked) => {
     // setSong(picked.song)
