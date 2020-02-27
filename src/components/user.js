@@ -19,7 +19,7 @@ const User = (props) => {
   const pickSong = (picked) => {
     // console.log("song to change", picked );
     setPickedSong(picked)
-    console.log("picked in state: ", pickedSong);
+    // console.log("picked in state: ", pickedSong);
     props.history.push(`/user/${picked.trackName}`)
   }
 
@@ -46,11 +46,11 @@ const User = (props) => {
       const token = window.localStorage.getItem("token")
       axios.defaults.headers.common['Authorization'] = token;
     } else {
-      console.log('token not here');
+      // console.log('token not here');
 
       // props.history.push("/user");
     }
-    console.log("hook runnning");
+    // console.log("hook runnning");
     findUser()
   }, [])
 

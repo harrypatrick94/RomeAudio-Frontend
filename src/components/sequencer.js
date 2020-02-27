@@ -133,10 +133,10 @@ const Sequencer = (props) => {
       }
     ).toMaster();
     if (props.picked !== null) {
-      console.log(props.picked);
-      console.log("propsss: ", props);
+      // console.log(props.picked);
+      // console.log("propsss: ", props);
     } else {
-      console.log("NULLLLLLL");
+      // console.log("NULLLLLLL");
     }
 
     // setSequence(initialState)

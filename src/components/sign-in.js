@@ -15,11 +15,11 @@ const SignIn = (props) => {
       .then(res => {
         // res.header("Access-Control-Allow-Origin", '*')
         // console.log("successfull sign in: ", res)
-        console.log("token created: ", res.data.token);
+        // console.log("token created: ", res.data.token);
         window.localStorage.setItem("token", res.data.token)
         window.localStorage.setItem("userId", res.data.user.id)
         axios.defaults.headers.common['Authorization'] = res.data.token;
-        console.log('header in signin', axios.defaults.headers.common['Authorization']);
+        // console.log('header in signin', axios.defaults.headers.common['Authorization']);
         props.history.push('/user');
       })
       .catch(
