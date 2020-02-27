@@ -37,8 +37,8 @@ const SaveButton = ({sequence}) => {
   return(
     <div  className="saveButton">
       <form onSubmit={saveTrack}>
-        <input type="text" placeholder="Trak Name" onChange={handleChangeTrak}/>
-        <input type="text" placeholder="Author" onChange={handleChangeName}/>
+        <input type="text" placeholder="Trak Name" className="input" onChange={handleChangeTrak}/>
+        <input type="text" placeholder="Author" className="input" onChange={handleChangeName}/>
         <input type="submit"/>
       </form>
     </div>

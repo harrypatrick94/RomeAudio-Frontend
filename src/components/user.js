@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import io from 'socket.io-client'
+// import io from 'socket.io-client'
 import Sequencer from "./sequencer";
 // import SaveButton from "./save-button"
 import SignOut from "./sign-out"
@@ -12,7 +12,7 @@ import axios from 'axios';
 
 const User = (props) => {
 
-  const socket = io('http://localhost:1337')
+  // const socket = io('http://localhost:1337')
   const [user, setUser] = useState(undefined)
   const [pickedSong, setPickedSong] = useState(null)
 
@@ -29,11 +29,11 @@ const User = (props) => {
 
         setUser(user.data)
         console.log(user.data);
-        socket.on('ping', data => {
-          console.log('PING', data);
+        // socket.on('ping', data => {
+          // console.log('PING', data);
           // get infomation here from back end deal with it and reserve booking
-        })
-        socket.emit("save song", console.log(user.data))
+        // })
+        // socket.emit("save song", console.log(user.data))
         // console.log;
         // this.$emit( 'song saved', res.data );
       })

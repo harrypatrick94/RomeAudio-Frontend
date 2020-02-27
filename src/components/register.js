@@ -67,22 +67,22 @@ const Register = (props) => {
               <label>User name</label>
             </li>
             <li className="registerFormLi">
-              <input type="text" onChange={handleUserName}/>
+              <input type="text" className="input" onChange={handleUserName}/>
             </li>
             <li className="registerFormLi">
               <label>Email</label>
             </li>
             <li className="registerFormLi">
-              <input type="text" onChange={handleEmail}/>
+              <input type="text" className="input" onChange={handleEmail}/>
             </li>
             <li className="registerFormLi">
               <label>password</label>
             </li>
             <li className="registerFormLi">
-              <input type="text" onChange={handlePassword}/>
+              <input type="text" className="input" onChange={handlePassword}/>
             </li>
-            <li className="registerFormLi">
-              <input type="submit"/><Link to="/signin">Sign in</Link>
+            <li >
+              <input type="submit" className="signInUp"/><Link to="/signin">Sign in</Link>
             </li>
           </ul>
         </form>

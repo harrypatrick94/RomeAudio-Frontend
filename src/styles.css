@@ -4,6 +4,7 @@ body {
   margin: 0;
   background: #fdeeb7;
   font-family: 'Oxanium' ;
+  text-shadow: 1px 1px red;
 }
 
 .App {
@@ -89,7 +90,7 @@ input {
   text-transform: uppercase;
   border-radius: 10px;
   background: #ffaebb;
-  box-shadow: 15px 15px 5px 7px #b5f6ff;
+  box-shadow:  12px 12px 5px 7px #b5f6ff;
 
 }
 
@@ -113,9 +114,14 @@ ul {
   border-radius: 10px;
   background: #ffaebb;
   box-shadow: 5px 5px 5px 5px #b5f6ff;
+  text-shadow: 1px 1px red;
 }
 
-
+.signInUp  {
+  border-radius: 5px;
+  background: #fdeeb7;
+  box-shadow: 1px 1px 1px 1px #b5f6ff;
+}
 
 .userName, .yourTrakz {
   text-transform: uppercase;
@@ -125,7 +131,18 @@ ul {
 
 }
 
+.playButton {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #b5f6ff;
+}
+
 a {
   color: black;
   text-decoration: none;
+}
+
+.input {
+  border-radius: 5px;
+  background: #fdeeb7;
+  box-shadow: 1px 1px 1px 1px #b5f6ff;
 }
